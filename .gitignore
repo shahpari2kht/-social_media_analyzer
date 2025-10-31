@@ -1,0 +1,17 @@
+# Virtual environments
+venv/
+__pycache__/
+*.pyc
+
+# Logs and checkpoints
+*.log
+*.pkl
+
+# Images (only keep selected ones)
+*.png
+*.jpg
+*.jpeg
+
+# System files
+.DS_Store
+Thumbs.db

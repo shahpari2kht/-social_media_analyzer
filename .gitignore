@@ -5,3 +5,4 @@ __pycache__/
 latest_scrape.txt
 .idea/
 .vscode/
+venv/

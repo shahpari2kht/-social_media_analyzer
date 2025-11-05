@@ -1,3 +1,7 @@
+![Build Status](https://github.com/shahpari2kht/DataScoutBot/actions/workflows/tests.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.9%2B-brightgreen)
+
 # 🤖 DataScoutBot
 
 یک ربات تلگرامی + داشبورد Streamlit برای جمع‌آوری خودکار داده‌های وب، ذخیره‌سازی در CSV و نمایش گرافیکی.

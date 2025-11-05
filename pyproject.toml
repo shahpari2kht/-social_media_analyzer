@@ -1,0 +1,51 @@
+[project]
+name = "datascoutbot"
+version = "0.1.0"
+description = "DataScoutBot — A data scouting and ETL orchestration system."
+authors = [
+{ name = "Parisa Mohammadzadeh", email = "shahpari2kht@gmail.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+"python-dotenv",
+"requests",
+"pandas",
+"numpy",
+"SQLAlchemy",
+"psycopg2-binary",
+"redis",
+"python-telegram-bot",
+"APScheduler",
+"n8npy"
+]
+
+[project.optional-dependencies]
+dev = [
+"pytest",
+"pytest-cov",
+"flake8",
+"black",
+"isort",
+"mypy"
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--tb=short"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

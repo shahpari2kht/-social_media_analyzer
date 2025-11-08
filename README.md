@@ -1,56 +1,76 @@
-![Build Status](https://github.com/shahpari2kht/DataScoutBot/actions/workflows/tests.yml/badge.svg)
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Python](https://img.shields.io/badge/Python-3.9%2B-brightgreen)
+# 📊 Social Media Analyzer
 
-# 🤖 DataScoutBot
----
-
-## ⚙️ اجزای اصلی
-
-| ماژول | توضیح |
-|-------|--------|
-| **Bot** (Aiogram) | دریافت فرمان‌های کاربر مانند `/scrape` و مدیریت پیام‌ها |
-| **Scraper** (Aiohttp + BeautifulSoup) | استخراج داده‌های نمونه از `books.toscrape.com` |
-| **Dashboard** (Streamlit) | نمایش آنی داده‌ها و نمودارها با قابلیت **Auto‑Refresh** |
+A Python based analytical tool designed to **collect, clean, and visualize social media data** from multiple public sources.  
+It provides sentiment analysis, engagement metrics, and topic extraction for research and business insights.
 
 ---
 
-## 📁 ساختار پوشه‌ها
-app/
+## ⚙️ Core Components
 
-├── bot/ ← منطق ربات تلگرام و فرمان‌ها
+| Module | Description |
+|--------|-------------|
+| `scraper/` | Asynchronous data collector (API & HTML) |
+| `analyzer/` | NLP-based text processor and sentiment analyzer |
+| `visualizer/` | Interactive visualization and dashboard tools |
+| `tests/` | Unit tests for each functional module |
 
-├── scraper/ ← فانکشن‌های جمع‌آوری داده و ذخیره در CSV
+---
 
-└── web_demo/ ← اجرای داشبورد Streamlit و رفرش خودکار
+## 📁 Project Structure
+
+social_media_analyzer/
+├── app/
+│ ├── main.py
+│ ├── scraper/
+│ │ └── scraper.py
+│ ├── web_demo/
+│ │ ├── app.py
+│ │ └── bridge.py
+├── docs/
+│ └── architecture.png
+├── requirements.txt
+├── pyproject.toml
+└── README.md
 
 
 ---
 
-## 🚀 اجرای محلی
+## 🚀 Running Locally
 
-**ترمینال ۱:**
+**Step 1.** Create a virtual environment  
 ```bash
-python app/bot/main.py
+python -m venv venv
+source venv/bin/activate  # Linux / macOS
+venv\Scripts\activate     # Windows
 
-ترمینال ۲:
+Step 2. Install dependencies
+pip install -r requirements.txt
+
+Step 3. Run the application
+python app/main.py
+
+or launch the interactive dashboard:
 
 streamlit run app/web_demo/app.py
 
-🧠 نکات و یادگیری‌ها
-کار با async I/O در پایتون (aiohttp)
-اتصال همزمان Bot و داشبورد وب
-اجرای Thread‑based Auto‑Refresh در Streamlit
-مانیتور تغییرات فایل (Event Monitoring)
-👩‍💻 توسعه‌دهنده
-طراحی و توسعه: Parisa Mohammadzadeh (shahpari2kht)
-
-📍Iran
-
-✉️ shahpari2kht@gmail.com
-
-🔒 این نسخه برای بررسی عمومی منتشر شده.
-
-فایل‌های حساس (توکن‌ها، داده‌های خروجی واقعی) در نسخه‌ی خصوصی نگهداری می‌شوند.
 
 
+🧠 Key Learnings
+End-to-end data pipeline for social media analytics
+
+Integration of asyncio with aiohttp for concurrent scraping
+
+Data cleaning and NLP analysis using spaCy and textblob
+
+Live visualization and reporting with Streamlit
+
+👩‍💻 Author
+Parisa Mohammadzadeh
+Data Scientist & Developer
+📍 Iran
+📧 shahpari2kht@gmail.com
+🔗 GitHub Profile
+
+🔒 Note
+This repository contains only non-sensitive public components.
+Private tokens, dataset samples, and deployment configurations are stored separately in the private version of this project.

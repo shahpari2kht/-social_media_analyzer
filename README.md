@@ -51,7 +51,7 @@ streamlit run app/web_demo/app.py
 طراحی و توسعه: **shahpari2kht (Parisa Mohammadzadeh)**  
 📍 Ilam, Iran 
 📬 تماس جهت دسترسی به نسخه‌ی کامل:  
-**✉️ parisa.mohammadzadeh.dev [at] gmail [dot] com**
+**✉️ shahpari2kht@gmail.com**
 
 ---
 

@@ -19,6 +19,7 @@ It provides sentiment analysis, engagement metrics, and topic extraction for res
 ## 📁 Project Structure
 
 social_media_analyzer/
+
 ├── app/
 │ ├── main.py
 │ ├── scraper/

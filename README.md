@@ -1,15 +1,19 @@
 📊 Social Media Analyzer / تحلیل شبکه‌های اجتماعی
 
-Python based tool for collecting, analyzing, and visualizing social media data from public sources.
+Python-based tool for collecting, analyzing, and visualizing social media data from public sources.
 ابزاری برای جمع‌آوری، تحلیل و بصری‌سازی داده‌های شبکه‌های اجتماعی از منابع عمومی.
 
-⚙️ Core Components / اجزای اصلی
-Module / ماژول	Description / توضیح
-scraper/	Asynchronous data collector (API & HTML) / جمع‌آوری داده‌ها به صورت همزمان با استفاده از API و HTML
-app/	Main application pipeline / مسیر اصلی اجرای برنامه
-web_demo/	Interactive dashboard / داشبورد تعاملی
-docs/	Documentation & architecture diagrams / مستندات و نمودارهای معماری
+
+| Module / ماژول | Description / توضیح                                                                                 |
+| -------------- | --------------------------------------------------------------------------------------------------- |
+| `scraper/`     | Asynchronous data collector (API & HTML) / جمع‌آوری داده‌ها به صورت همزمان با استفاده از API و HTML |
+| `app/`         | Main application pipeline / مسیر اصلی اجرای برنامه                                                  |
+| `web_demo/`    | Interactive dashboard / داشبورد تعاملی                                                              |
+| `docs/`        | Documentation & architecture diagrams / مستندات و نمودارهای معماری                                  |
+
+
 📁 Project Structure / ساختار پروژه
+
 social_media_analyzer/
 ├── app/
 │   ├── main.py
@@ -27,7 +31,10 @@ social_media_analyzer/
 ├── .gitignore
 ├── social_media_analyzer_private/  # private tokens & datasets / داده‌ها و توکن‌های خصوصی
 
+
+
 🚀 Installation & Running Locally / نصب و اجرای محلی
+
 
 Step 1 / مرحله ۱: Create virtual environment / ایجاد محیط مجازی
 

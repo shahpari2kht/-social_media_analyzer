@@ -1,6 +1,9 @@
 📊 Social Media Analyzer / تحلیل شبکه‌های اجتماعی
 
+
 Python-based tool for collecting, analyzing, and visualizing social media data from public sources.
+
+
 ابزاری برای جمع‌آوری، تحلیل و بصری‌سازی داده‌های شبکه‌های اجتماعی از منابع عمومی.
 
 

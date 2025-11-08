@@ -1,9 +1,0 @@
-streamlit
-pandas
-numpy
-gensim
-hazm
-wordcloud
-matplotlib
-python-bidi
-arabic-reshaper

@@ -84,6 +84,3 @@ Contains only public components / شامل تنها بخش‌های عمومی �
 Private tokens, dataset samples, and deployment configurations are stored separately / توکن‌ها، نمونه داده‌ها و تنظیمات خصوصی جدا نگه داشته شده‌اند
 
 Ensure sensitive data is never committed to this repository / مطمئن شوید داده‌های حساس هرگز به مخزن عمومی اضافه نشوند
-
-yaml
-Code kopieren
